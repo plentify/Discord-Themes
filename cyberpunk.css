@@ -132,7 +132,6 @@ nav[aria-label="Servers sidebar" i] * {
   --scrollbar-auto-track: transparent !important;
 }
 
-/* status indicator colors intentionally left untouched — Discord defaults apply */
 
 body, #app-mount, [class*="chatContent_" i], [class*="messageContent_" i], input, textarea {
   font-family: var(--cyber-font-body) !important;
@@ -232,7 +231,6 @@ img[src*="avatars" i] {
   background-color: transparent !important;
 }
 
-/* ===== Member list / activity panel — distinct glass rail treatment ===== */
 [class*="membersWrap" i],
 [class*="members_" i] {
   background: linear-gradient(180deg, rgba(22, 14, 28, 0.5), rgba(14, 9, 19, 0.55)) !important;
@@ -258,7 +256,6 @@ img[src*="avatars" i] {
   border-radius: 0 6px 6px 0 !important;
 }
 
-/* ===== Dividers / separators — sharp neon rule instead of soft grey ===== */
 [class*="divider_" i],
 [class*="separator_" i],
 hr {
