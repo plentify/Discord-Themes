@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Comfortaa:wght@400;500;600;700&display=swap");
+
+:root {
+  --sunset-bg-image: url("https://cdn.discordapp.com/attachments/1534309170164011238/1538342458012729414/sunset-icegif-7.png?ex=6a82548f&is=6a81030f&hm=375b630c3d072051391121c7029754edaec4943f8ed3c558b8640844005eafaf&");
+
+  --sunset-coral: #ff7a5c;
+  --sunset-orange: #ff9d4d;
+  --sunset-magenta: #e8548c;
+  --sunset-purple: #7a4f9e;
+  --sunset-gold: #ffc978;
+
+  --sunset-font-display: "Comfortaa", "Quicksand", sans-serif;
+  --sunset-font-body: "Quicksand", "Comfortaa", sans-serif;
+
+  --shading: rgba(30, 12, 28, 0.45);
+  --panel-alpha: 0.78;
+}
+
+html, body, #app-mount {
+  background-image: linear-gradient(var(--shading), var(--shading)), var(--sunset-bg-image) !important;
+  background-size: cover, cover !important;
+  background-position: center center, center center !important;
+  background-attachment: fixed, fixed !important;
+  background-repeat: no-repeat, no-repeat !important;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: linear-gradient(var(--shading), var(--shading)), var(--sunset-bg-image);
+  background-size: cover, cover;
+  background-position: center center, center center;
+  background-attachment: fixed, fixed;
+  background-repeat: no-repeat, no-repeat;
+}
+
+[class*="bg_" i],
+[class*="base_" i],
+[class*="baseLayer_" i],
+[class*="layers_" i],
+[class*="layer_" i],
+[class*="app-" i],
+[class*="appMount_" i],
+[class*="app_" i],
+[class*="page_" i],
+[class*="chat_" i],
+[class*="chatContent_" i],
+[class*="content_" i],
+[class*="container_" i],
+[class*="sidebar" i],
+[class*="guilds" i],
+[class*="guildsList" i],
+[class*="channelsList" i],
+[class*="privateChannels" i],
+[class*="members" i],
+[class*="membersWrap" i],
+[class*="panels" i],
+[class*="activityPanel" i],
+[class*="premiumSidebar" i],
+[class*="homeSidebar" i],
+[class*="peopleList" i],
+[class*="nowPlaying" i],
+[class*="scroller_" i],
+[class*="scroller__" i],
+[class*="wrapper_" i],
+nav,
+aside {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+nav[aria-label="Servers sidebar" i],
+nav[aria-label="Servers sidebar" i] * {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+.theme-dark, .theme-darker, .theme-midnight, .theme-light, :root {
+
+  --bg-base-primary: rgba(36, 16, 26, var(--panel-alpha)) !important;
+  --bg-base-secondary: rgba(42, 19, 30, var(--panel-alpha)) !important;
+  --bg-base-tertiary: rgba(30, 13, 22, var(--panel-alpha)) !important;
+  --bg-surface-raised: rgba(40, 18, 28, var(--panel-alpha)) !important;
+  --bg-surface-overlay: rgba(40, 18, 28, 0.9) !important;
+  --bg-surface-overlay-tmp: rgba(40, 18, 28, 0.9) !important;
+  --background-surface-high: rgba(42, 19, 30, 0.65) !important;
+  --background-surface-low: rgba(42, 19, 30, 0.65) !important;
+  --background-surface-lowest: rgba(42, 19, 30, 0.45) !important;
+  --bg-mod-faint: rgba(255, 157, 77, 0.06) !important;
+  --bg-mod-subtle: rgba(255, 157, 77, 0.12) !important;
+  --bg-mod-strong: rgba(232, 84, 140, 0.18) !important;
+  --bg-backdrop: rgba(24, 10, 18, 0.6) !important;
+
+  --background-gradient-high: transparent !important;
+  --background-gradient-low: transparent !important;
+  --background-gradient-mid: transparent !important;
+  --background-base-lowest: transparent !important;
+  --background-base-low: transparent !important;
+  --background-base-mid: transparent !important;
+  --background-base-high: transparent !important;
+  --background-primary: rgba(36, 16, 26, var(--panel-alpha)) !important;
+  --background-secondary: rgba(42, 19, 30, var(--panel-alpha)) !important;
+  --background-secondary-alt: rgba(48, 22, 34, var(--panel-alpha)) !important;
+  --background-tertiary: rgba(30, 13, 22, var(--panel-alpha)) !important;
+  --background-floating: rgba(40, 18, 28, 0.9) !important;
+  --background-mobile-primary: rgba(36, 16, 26, var(--panel-alpha)) !important;
+  --background-mobile-secondary: rgba(42, 19, 30, var(--panel-alpha)) !important;
+  --background-message-hover: rgba(255, 157, 77, 0.07) !important;
+  --channeltextarea-background: rgba(48, 22, 34, 0.85) !important;
+  --chat-background: rgba(36, 16, 26, var(--panel-alpha)) !important;
+  --modal-background: rgba(40, 18, 28, 0.9) !important;
+
+  --text-normal: #fff1e6 !important;
+  --text-muted: #d8a9a0 !important;
+  --header-primary: #fff6ee !important;
+  --header-secondary: var(--sunset-gold) !important;
+  --interactive-normal: #e8b8a8 !important;
+  --interactive-hover: var(--sunset-orange) !important;
+  --interactive-active: var(--sunset-coral) !important;
+
+  --text-link: var(--sunset-gold) !important;
+  --brand-experiment: var(--sunset-magenta) !important;
+  --brand-500: var(--sunset-magenta) !important;
+  --brand-560: var(--sunset-magenta) !important;
+
+  --scrollbar-thin-thumb: var(--sunset-coral) !important;
+  --scrollbar-auto-thumb: var(--sunset-coral) !important;
+  --scrollbar-auto-track: transparent !important;
+}
+
+body, #app-mount, [class*="chatContent_" i], [class*="messageContent_" i], input, textarea {
+  font-family: var(--sunset-font-body) !important;
+}
+
+[class*="username_" i],
+[class*="headerText_" i],
+[class*="title_" i],
+[class*="channelName_" i],
+[class*="name_" i][class*="guild" i],
+h1, h2, h3,
+[class*="defaultColor_" i][class*="heading" i],
+[class*="membersGroup_" i] [class*="title_" i],
+[class*="timestamp_" i] {
+  font-family: var(--sunset-font-display) !important;
+  letter-spacing: 0.01em;
+}
+
+[class*="username_" i] {
+  font-weight: 700 !important;
+  text-shadow: 0 0 8px rgba(255, 157, 77, 0.35);
+}
+
+nav[class*="side" i],
+[class*="sidebar" i],
+[class*="chat" i],
+[class*="guilds" i],
+[class*="members" i],
+[class*="panels" i] {
+  backdrop-filter: blur(6px);
+}
+
+form [class*="channelTextArea" i] {
+  border: 1px solid rgba(255, 157, 77, 0.25) !important;
+  border-radius: 22px !important;
+}
+
+img[class*="avatar" i],
+img[src*="avatars" i] {
+  border-radius: 50% !important;
+}
+
+[class*="menu_" i][role="menu"],
+[class*="contextMenu" i] {
+  background: rgba(42, 19, 30, 0.85) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 201, 120, 0.25) !important;
+  border-radius: 18px !important;
+  padding: 6px !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5) !important;
+}
+[class*="menu_" i] [class*="item_" i] {
+  border-radius: 12px !important;
+  margin: 2px 0 !important;
+}
+[class*="menu_" i] [class*="item_" i]:hover,
+[class*="menu_" i] [class*="focused_" i] {
+  background: linear-gradient(90deg, rgba(255, 122, 92, 0.22), rgba(232, 84, 140, 0.18)) !important;
+  color: #fff6ee !important;
+}
+
+.wrapper_c0e32c,
+.emojiPicker_c0e32c,
+[class*="emojiPicker" i],
+[class*="gifPicker" i],
+[class*="stickerPicker" i],
+[class*="expressionPicker" i],
+[class*="pickerContainer" i] {
+  background-color: transparent !important;
+}
+
+.contentWrapper__08434,
+[class*="positionContainer_" i],
+[class*="drawerSizingWrapper_" i],
+[class*="contentWrapper_" i] {
+  background: rgba(42, 19, 30, 0.55) !important;
+  background-color: rgba(42, 19, 30, 0.55) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 201, 120, 0.25) !important;
+  border-radius: 18px !important;
+}
+
+[class*="emojiPicker" i] [class*="categoryRow" i],
+[class*="expressionPicker" i] [class*="categoryRow" i],
+[class*="emojiPicker" i] [class*="searchBar" i],
+[class*="expressionPicker" i] [class*="searchBar" i] {
+  background: rgba(48, 22, 34, 0.15) !important;
+}
+
+#emoji-picker-tab-panel,
+#gif-picker-tab-panel,
+#sticker-picker-tab-panel,
+[id*="picker-tab-panel" i],
+[class*="emojiPickerHasTabWrapper" i] {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+[class*="membersWrap" i],
+[class*="members_" i] {
+  background: linear-gradient(180deg, rgba(42, 19, 30, 0.5), rgba(30, 13, 22, 0.55)) !important;
+  border-left: 1px solid rgba(255, 201, 120, 0.3) !important;
+  box-shadow: -6px 0 24px rgba(255, 122, 92, 0.15) !important;
+  backdrop-filter: blur(14px) !important;
+}
+
+[class*="membersGroup_" i] [class*="title_" i] {
+  color: var(--sunset-gold) !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 201, 120, 0.25);
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+}
+
+[class*="divider_" i],
+[class*="separator_" i],
+hr {
+  border: none !important;
+  height: 2px !important;
+  background: linear-gradient(90deg, transparent, var(--sunset-coral), var(--sunset-gold), var(--sunset-magenta), transparent) !important;
+  opacity: 0.5 !important;
+  margin: 10px 0 !important;
+  border-radius: 999px;
+}
+
+[class*="topic_" i]::after,
+[class*="container_" i][class*="header" i] {
+  box-shadow: 0 1px 0 rgba(255, 201, 120, 0.3) !important;
+}
+
+[role="separator"] {
+  background: linear-gradient(90deg, var(--sunset-magenta), var(--sunset-gold)) !important;
+  opacity: 0.4 !important;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--sunset-coral), var(--sunset-magenta)) !important;
+  border-radius: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent !important;
+}

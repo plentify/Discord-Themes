@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap");
+
+:root {
+  --cyber-bg-image: url("https://www.icegif.com/wp-content/uploads/2024/12/cyberpunk-icegif-9.gif");
+
+  --cyber-font-display: "Chakra Petch", "Rajdhani", sans-serif;
+  --cyber-font-body: "Rajdhani", "Chakra Petch", sans-serif;
+
+  --cyber-yellow: #f4e04d;
+  --cyber-yellow-deep: #d4af1a;
+  --cyber-purple: #b06ee8;
+  --cyber-purple-deep: #7c3fc4;
+  --cyber-white: #f5f0ff;
+
+  --shading: rgba(8, 4, 14, 0.55);
+
+  --panel-alpha: 0.45;
+}
+
+html, body, #app-mount {
+  background-image: linear-gradient(var(--shading), var(--shading)), var(--cyber-bg-image) !important;
+  background-size: cover, contain !important;
+  background-position: center center, center center !important;
+  background-attachment: fixed, fixed !important;
+  background-repeat: no-repeat, no-repeat !important;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: linear-gradient(var(--shading), var(--shading)), var(--cyber-bg-image);
+  background-size: cover, contain;
+  background-position: center center, center center;
+  background-attachment: fixed, fixed;
+  background-repeat: no-repeat, no-repeat;
+}
+
+[class*="bg_" i],
+[class*="base_" i],
+[class*="baseLayer_" i],
+[class*="layers_" i],
+[class*="layer_" i],
+[class*="app-" i],
+[class*="appMount_" i],
+[class*="app_" i],
+[class*="page_" i],
+[class*="chat_" i],
+[class*="chatContent_" i],
+[class*="content_" i],
+[class*="container_" i],
+[class*="sidebar" i],
+[class*="guilds" i],
+[class*="guildsList" i],
+[class*="channelsList" i],
+[class*="privateChannels" i],
+[class*="members" i],
+[class*="membersWrap" i],
+[class*="panels" i],
+[class*="activityPanel" i],
+[class*="premiumSidebar" i],
+[class*="homeSidebar" i],
+[class*="peopleList" i],
+[class*="nowPlaying" i],
+[class*="scroller_" i],
+[class*="scroller__" i],
+[class*="wrapper_" i],
+nav,
+aside {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+nav[aria-label="Servers sidebar" i],
+nav[aria-label="Servers sidebar" i] * {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+.theme-dark, .theme-darker, .theme-midnight, .theme-light, :root {
+
+  --bg-base-primary: rgba(18, 12, 24, var(--panel-alpha)) !important;
+  --bg-base-secondary: rgba(22, 14, 28, var(--panel-alpha)) !important;
+  --bg-base-tertiary: rgba(14, 9, 19, var(--panel-alpha)) !important;
+  --bg-surface-raised: rgba(20, 13, 26, var(--panel-alpha)) !important;
+  --bg-surface-overlay: rgba(20, 13, 26, 0.9) !important;
+  --bg-surface-overlay-tmp: rgba(20, 13, 26, 0.9) !important;
+  --background-surface-high: rgba(22, 14, 28, 0.35) !important;
+  --background-surface-low: rgba(22, 14, 28, 0.35) !important;
+  --background-surface-lowest: rgba(22, 14, 28, 0.2) !important;
+  --bg-mod-faint: rgba(244, 224, 77, 0.05) !important;
+  --bg-mod-subtle: rgba(244, 224, 77, 0.1) !important;
+  --bg-mod-strong: rgba(176, 110, 232, 0.18) !important;
+  --bg-backdrop: rgba(8, 5, 12, 0.6) !important;
+
+  --background-gradient-high: transparent !important;
+  --background-gradient-low: transparent !important;
+  --background-gradient-mid: transparent !important;
+  --background-base-lowest: transparent !important;
+  --background-base-low: transparent !important;
+  --background-base-mid: transparent !important;
+  --background-base-high: transparent !important;
+  --background-primary: rgba(18, 12, 24, var(--panel-alpha)) !important;
+  --background-secondary: rgba(22, 14, 28, var(--panel-alpha)) !important;
+  --background-secondary-alt: rgba(26, 17, 32, var(--panel-alpha)) !important;
+  --background-tertiary: rgba(14, 9, 19, var(--panel-alpha)) !important;
+  --background-floating: rgba(20, 13, 26, 0.9) !important;
+  --background-mobile-primary: rgba(18, 12, 24, var(--panel-alpha)) !important;
+  --background-mobile-secondary: rgba(22, 14, 28, var(--panel-alpha)) !important;
+  --background-message-hover: rgba(176, 110, 232, 0.06) !important;
+  --channeltextarea-background: rgba(26, 17, 32, 0.85) !important;
+  --chat-background: rgba(18, 12, 24, var(--panel-alpha)) !important;
+  --modal-background: rgba(20, 13, 26, 0.9) !important;
+
+  --text-normal: var(--cyber-white) !important;
+  --text-muted: #b39fd1 !important;
+  --header-primary: #ffffff !important;
+  --header-secondary: var(--cyber-purple) !important;
+  --interactive-normal: #cbb8e6 !important;
+  --interactive-hover: var(--cyber-yellow) !important;
+  --interactive-active: var(--cyber-yellow) !important;
+
+  --text-link: var(--cyber-yellow) !important;
+  --brand-experiment: var(--cyber-purple-deep) !important;
+  --brand-500: var(--cyber-purple-deep) !important;
+  --brand-560: var(--cyber-purple-deep) !important;
+
+  --scrollbar-thin-thumb: var(--cyber-purple-deep) !important;
+  --scrollbar-auto-thumb: var(--cyber-purple-deep) !important;
+  --scrollbar-auto-track: transparent !important;
+}
+
+/* status indicator colors intentionally left untouched — Discord defaults apply */
+
+body, #app-mount, [class*="chatContent_" i], [class*="messageContent_" i], input, textarea {
+  font-family: var(--cyber-font-body) !important;
+}
+
+[class*="username_" i],
+[class*="headerText_" i],
+[class*="title_" i],
+[class*="channelName_" i],
+[class*="name_" i][class*="guild" i],
+h1, h2, h3,
+[class*="defaultColor_" i][class*="heading" i],
+[class*="membersGroup_" i] [class*="title_" i],
+[class*="timestamp_" i] {
+  font-family: var(--cyber-font-display) !important;
+  letter-spacing: 0.02em;
+}
+
+[class*="username_" i] {
+  font-weight: 600 !important;
+  text-shadow: 0 0 6px rgba(176, 110, 232, 0.35);
+}
+
+nav[class*="side" i],
+[class*="sidebar" i],
+[class*="chat" i],
+[class*="guilds" i],
+[class*="members" i],
+[class*="panels" i] {
+  backdrop-filter: blur(6px);
+}
+
+form [class*="channelTextArea" i] {
+  border: 1px solid rgba(176, 110, 232, 0.2) !important;
+  border-radius: 12px !important;
+}
+
+img[class*="avatar" i],
+img[src*="avatars" i] {
+  border-radius: 50% !important;
+}
+
+[class*="menu_" i][role="menu"],
+[class*="contextMenu" i] {
+  background: rgba(22, 14, 28, 0.4) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(244, 224, 77, 0.2) !important;
+  border-radius: 12px !important;
+  padding: 6px !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.55) !important;
+}
+[class*="menu_" i] [class*="item_" i] {
+  border-radius: 6px !important;
+  margin: 2px 0 !important;
+}
+[class*="menu_" i] [class*="item_" i]:hover,
+[class*="menu_" i] [class*="focused_" i] {
+  background: rgba(176, 110, 232, 0.2) !important;
+  color: #ffffff !important;
+}
+
+.wrapper_c0e32c,
+.emojiPicker_c0e32c,
+[class*="emojiPicker" i],
+[class*="gifPicker" i],
+[class*="stickerPicker" i],
+[class*="expressionPicker" i],
+[class*="pickerContainer" i] {
+  background-color: transparent !important;
+}
+
+.contentWrapper__08434,
+[class*="positionContainer_" i],
+[class*="drawerSizingWrapper_" i],
+[class*="contentWrapper_" i] {
+  background: rgba(22, 14, 28, 0.15) !important;
+  background-color: rgba(22, 14, 28, 0.15) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(244, 224, 77, 0.2) !important;
+  border-radius: 12px !important;
+}
+
+[class*="emojiPicker" i] [class*="categoryRow" i],
+[class*="expressionPicker" i] [class*="categoryRow" i],
+[class*="emojiPicker" i] [class*="searchBar" i],
+[class*="expressionPicker" i] [class*="searchBar" i] {
+  background: rgba(26, 17, 32, 0.15) !important;
+}
+
+#emoji-picker-tab-panel,
+#gif-picker-tab-panel,
+#sticker-picker-tab-panel,
+[id*="picker-tab-panel" i],
+[class*="emojiPickerHasTabWrapper" i] {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* ===== Member list / activity panel — distinct glass rail treatment ===== */
+[class*="membersWrap" i],
+[class*="members_" i] {
+  background: linear-gradient(180deg, rgba(22, 14, 28, 0.5), rgba(14, 9, 19, 0.55)) !important;
+  border-left: 1px solid rgba(244, 224, 77, 0.25) !important;
+  box-shadow: -6px 0 24px rgba(124, 63, 196, 0.15) !important;
+  backdrop-filter: blur(14px) !important;
+}
+
+[class*="membersGroup_" i] [class*="title_" i] {
+  color: var(--cyber-yellow) !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(244, 224, 77, 0.2);
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+}
+
+[class*="member_" i]:hover {
+  background: linear-gradient(90deg, rgba(176, 110, 232, 0.14), transparent) !important;
+  border-left: 2px solid var(--cyber-yellow);
+  border-radius: 0 6px 6px 0 !important;
+}
+
+/* ===== Dividers / separators — sharp neon rule instead of soft grey ===== */
+[class*="divider_" i],
+[class*="separator_" i],
+hr {
+  border: none !important;
+  height: 1px !important;
+  background: linear-gradient(90deg, var(--cyber-yellow), var(--cyber-purple), transparent) !important;
+  opacity: 0.55 !important;
+  margin: 8px 0 !important;
+}
+
+[class*="topic_" i]::after,
+[class*="container_" i][class*="header" i] {
+  box-shadow: 0 1px 0 rgba(244, 224, 77, 0.25) !important;
+}
+
+[role="separator"] {
+  background: linear-gradient(90deg, var(--cyber-purple), var(--cyber-yellow)) !important;
+  opacity: 0.4 !important;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--cyber-purple-deep) !important;
+  border-radius: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent !important;
+}
